@@ -5,7 +5,7 @@ const Advertisement = () => {
     return (
         <Container>
             <Row className="text-center">
-                <Col xs="12" className="mb-3">
+                <Col xs="12" className="mt-3 mb-3">
                     <div className="head2">Why choose SubSpace?</div>
                     <div className="head3 mt-2">2000+ businesses trust their payments with SubSpace</div>
                 </Col>
@@ -48,7 +48,7 @@ const Advertisement = () => {
                     <img className="adv-img" src="../assets/images/k.png" alt=" " />
                 </Col>
             </Row>
-            <Row className="text-center mt-3">
+            <Row className="text-center mt-3 mb-3">
                 <Col xs="12" className="p-2">
                     <div className="head4">Need help? We are just a click away. <b>Contact Us</b></div>
                 </Col>

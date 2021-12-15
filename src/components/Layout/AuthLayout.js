@@ -10,7 +10,7 @@ const Auth = (props) => {
     <>
       <div className="wrapper-auth">
         <AuthNavbar />
-          <Container className="mt-5 pb-5 justify-content-center">
+          <Container className="mt-5 pb-5 d-flex justify-content-center">
               <Row className="box-login">
                   <Switch>
                       <Route path="/auth/login" render={(props) => <Login {...props} />} />

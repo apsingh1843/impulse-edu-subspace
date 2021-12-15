@@ -1,17 +1,22 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 import { Col, Form, FormGroup, Label, Input, FormFeedback, Button } from 'reactstrap';
 import Advertisement from './Advertisement';
 
 const Login = () => {
-
+    const history = useHistory();
     const handleSubmit = (e) => {
         e.preventDefault();
+        history.push("/dashboard");
     }
 
     return (
         <>
             <Col className="form-login px-2 py-3 py-lg-5" xs="12" md="5">
                 <div className="head2 mt-4 text-center">Log in to Dashboard</div>
+                <div className="text-center my-2">
+                    <Button type="button" color="primary" onClick={()=>history.push("/dashboard")}>Click to see Dashboard</Button>
+                </div>
                 <Form role="form" onSubmit={handleSubmit} className="mx-2 mx-md-2 mx-lg-5 mt-3">
                     <FormGroup className="position-relative">
                         <Label for="Email" className="head3">Your Email</Label>
