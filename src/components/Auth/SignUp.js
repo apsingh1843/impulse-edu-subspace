@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import {useHistory} from 'react-router-dom';
+import {useHistory, Link} from 'react-router-dom';
 import { Col, Form, FormGroup, Label, Input, FormFeedback, Button, InputGroup } from 'reactstrap';
 import Advertisement from './Advertisement';
 
@@ -28,6 +28,10 @@ const SignUp = () => {
                 <div className="head2 mt-2 text-center">Create an Account</div>
                 <div className="text-center my-2">
                     <Button type="button" color="primary" onClick={()=>history.push("/dashboard")}>Click to see Dashboard</Button>
+                </div>
+                <div className="text-center my-1 d-sm-none">
+                   Already a user ?{" "}
+                   <Link to="/auth/login" style={{"text-decoration":"none"}}>Log In</Link>
                 </div>
                 <Form role="form" onSubmit={handleSubmit} className="mx-2 mx-md-2 mx-lg-5 mt-3">
                     <FormGroup className="position-relative">

@@ -27,12 +27,12 @@ const AuthNavbar = () => {
           </NavbarBrand>
 
           {location.pathname === "/auth/login" ?
-            <NavbarText className="text-white">
+            <NavbarText className="text-white d-none d-sm-block">
               <span className="me-3">New to Subspace ?</span>
               <Button color="primary" size="sm" type="button" onClick={signupbtn}>Sign Up</Button>
             </NavbarText>
             :
-            <NavbarText className="text-white">
+            <NavbarText className="text-white d-none d-sm-block">
               <span className="me-3">Already a user ?</span>
               <Button color="primary" size="sm" type="button" onClick={loginbtn}>Log In</Button>
             </NavbarText> }
