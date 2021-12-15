@@ -5,31 +5,34 @@ import { Container, Row, Col, Button, Input } from 'reactstrap';
 const Home = () =>{
     return (
         <div className="p-2 p-md-1 p-lg-4">
-            <Container>
-                <div className="text1">Welcome to your Dashbaoard, Grow90</div>
+            <Container className="mx-auto">
+                <div className="text1">Welcome to your Dashbaoard, Groww90</div>
                 <Row className="px-3 py-5 bg-white w-100 mt-4 home-box1">
                     <Col xs="12">
                         <div className="text1"><b>Your are just steps away from enabling live payments</b></div>
                         <div className="text1 my-3">Submit a few KYC details and start accepting payments from your customers</div>
-                        <div className="d-flex flex-row justify-content-between align-items-center my-4 w-75 px-3">
-                            <img src="../assets/icons/complete.png" alt=" " />
-                            <img src="../assets/icons/path.png" alt=" " height="6px"/>
-                            <img src="../assets/icons/incomplete.png" alt=" " />
-                            <img src="../assets/icons/path.png" alt=" " height="6px"/>
-                            <img src="../assets/icons/incomplete.png" alt=" " />
+                        <div className="d-flex flex-row justify-content-between align-items-center my-4 w-75 mx-auto">
+                            <img src="../assets/icons/complete.png" alt=" " className="circle"/>
+                            <img src="../assets/icons/path.png" alt=" " className="path"/>
+                            <img src="../assets/icons/incomplete.png" alt=" " className="circle"/>
+                            <img src="../assets/icons/path.png" alt=" " className="path"/>
+                            <img src="../assets/icons/incomplete.png" alt=" " className="circle"/>
                         </div>
                     </Col>
-                    <Col xs="12" lg="4">
-                        <div className="text1">Contact Details</div>
+                    <Col xs="12" md="4" className="text-center p-2">
+                        <div className="text1 fw-bolder">
+                            Contact Details{" "}
+                            <img src="../assets/icons/complete.png" alt=" " className="circle d-md-none"/>
+                        </div>
                     </Col>
-                    <Col xs="12" lg="4">
-                        <div className="text1">Live payments and Settlements</div>
+                    <Col xs="12" md="4" className="text-center p-2 my-3 my-md-0">
+                        <div className="text1 fw-bolder">Live payments and Settlements</div>
                         <p className="head4 mb-3">Submit a few KYC details to start accepting payments and receive 
                             settlement in your account</p>
                         <Button type="button" color="primary">Submit KYC</Button>
                     </Col>
-                    <Col xs="12" lg="4">
-                        <div className="text1">Account Activation</div>
+                    <Col xs="12" md="4" className="text-center p-2">
+                        <div className="text1 fw-bolder">Account Activation</div>
                         <p className="head4">Get all the KYC details approved to complete the account activation</p>
                     </Col>
                 </Row>
