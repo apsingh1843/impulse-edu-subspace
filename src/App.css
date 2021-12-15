@@ -52,6 +52,12 @@
   color: rgba(76, 85, 101, 0.85);
 }
 
+.text1 {
+  font-size: 18px;
+  color: #444444;
+  font-weight: 500;
+}
+
 .sidebar {
   width: 280px;
   min-height: 100vh;
@@ -95,6 +101,17 @@
   margin-left: 20px;
 }
 
+.home-box1 {
+  border: none;
+  border-radius: 8px;
+}
+
+.home-box2 {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .brand-name {
     font-size: 30px;
@@ -103,5 +120,8 @@
   .adv-img {
     height: 60px;
     width: 60px;
+  }
+  .text1 {
+    font-size: 14px;
   }
 }

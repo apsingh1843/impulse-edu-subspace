@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import { NavLink as NavLinkRRD } from 'react-router-dom';
-import { Nav, Navbar, Container, NavbarBrand,NavItem, NavLink } from 'reactstrap';
+import { NavLink as NavLinkRRD, useHistory } from 'react-router-dom';
+import { Nav, Navbar, Container, NavbarBrand,NavItem, NavLink, Button } from 'reactstrap';
 
 export const List = [
     {
@@ -62,6 +62,7 @@ export const List = [
 
 const DashSidebar = () =>{
     const[active, setActive] = useState('Home');
+    const history = useHistory();
 
     const selectActive = (name) =>{
         setActive(name);
@@ -86,6 +87,9 @@ const DashSidebar = () =>{
                                 </NavItem>
                             )
                         })}
+                        <NavItem className="mt-5 mb-3">
+                            <Button onClick={()=> history.push("/auth")} type="button" color="primary">Log Out</Button>
+                        </NavItem>
                     </Nav>                       
                 </Container>
             </Navbar>
